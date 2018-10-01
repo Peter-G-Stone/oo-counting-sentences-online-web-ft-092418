@@ -20,7 +20,7 @@ class String
     #binding.pry 
     arr = self.split(/[!?.]/).compact.count 
     arr.select do |w|
-      w != (/[!.?]/) && w != nil  
+      w != (/[!.?\s]/) && w != nil  
     end 
     
   end
