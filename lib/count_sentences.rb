@@ -18,7 +18,10 @@ class String
   def count_sentences
     
     #binding.pry 
-    self.split(/[!?.]/).compact.count 
+    arr = self.split(/[!?.]/).compact.count 
+    arr.select do |w|
+      w != (/[!.?]/) && w != nil  
+    end 
     
   end
 end
