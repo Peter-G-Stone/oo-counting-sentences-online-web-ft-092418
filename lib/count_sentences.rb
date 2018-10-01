@@ -9,8 +9,6 @@ class String
       true 
     elsif self.end_with?("?")
       true 
-    else
-      false 
     end 
     
   end
