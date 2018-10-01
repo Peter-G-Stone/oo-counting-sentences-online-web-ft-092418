@@ -23,6 +23,5 @@ class String
       w != (/[!.?\s]/) && w != "" 
     end 
     arr.compact.count 
-    
   end
 end
