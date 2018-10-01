@@ -19,10 +19,10 @@ class String
     
     
     arr = self.split(/[!?.]/).compact 
-    arr.select do |w|
-      w != (/[!.?\s]/) && w != nil  
+    arr.select! do |w|
+      w != (/[!.?\s]/) && w != "" 
     end 
-    arr.count 
+    arr.compact.count 
     
   end
 end
